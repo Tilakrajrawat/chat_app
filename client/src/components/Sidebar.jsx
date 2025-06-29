@@ -6,7 +6,7 @@ const Sidebar = ({ selectedUser, setSelectedUser }) => {
   return (
     <div
       className={`bg-[#818582]/10 h-full p-5 rounded-r-xl overflow-y-scroll text-white${
-        selectedUser ? "max-md:hidden" : ''
+        selectedUser ? " max-md:hidden" : ""
       }`}
     >
       <div className="pb-5">
@@ -45,7 +45,7 @@ const Sidebar = ({ selectedUser, setSelectedUser }) => {
             onClick={() => setSelectedUser(user)}
             key={index}
             className={`relative flex items-center gap-2 p-2 pl-4 rounded cursor-pointer max-sm:text-sm ${
-              selectedUser?._id === user._id && "bg-[#282142]/50"
+              selectedUser?._id == user._id && "bg-[#282142]/50"
             }`}
           >
             <img
